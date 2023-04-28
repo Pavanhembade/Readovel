@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivMusic"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/music"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:textColor="#7019C1"
+        android:textSize="20sp"
+        android:layout_alignTop="@id/ivMusic"
+        android:layout_toRightOf="@id/ivMusic"
+        android:layout_toEndOf="@id/ivMusic"/>
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textColor="#1CA10D"
+        android:textSize="18sp"
+        android:layout_alignBottom="@id/ivMusic"
+        android:layout_toRightOf="@id/ivMusic"
+        android:layout_toEndOf="@id/ivMusic"/>
+    
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_marginTop="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@id/ivStop"
+        android:src="@drawable/play"/>
+
+    <ImageView
+        android:id="@+id/ivStop"
+        android:layout_marginTop="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/stop"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
